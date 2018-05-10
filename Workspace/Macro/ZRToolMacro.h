@@ -56,111 +56,6 @@
 #define     ZRHexA(color, a)            [UIColor colorWithRed:((float)((color & 0xFF0000) >> 16))/255.0 green:((float)((color & 0xFF00) >> 8))/255.0 blue:((float)(color & 0xFF))/255.0 alpha:a]
 
 
-/** 圆角和加边框 */
-#define     ZRBorderRadius(View, Radius, Width, Color) \
-            \
-            [View.layer setCornerRadius:(Radius)];\
-            [View.layer setMasksToBounds:YES];\
-            [View.layer setBorderWidth:(Width)];\
-            [View.layer setBorderColor:[Color CGColor]]
-
-/** 圆角 */
-#define     ZRRadius(View, Radius) \
-            \
-            [View.layer setCornerRadius:(Radius)];\
-            [View.layer setMasksToBounds:YES]
-
-
-/** PushVC */
-#define     ZRPushVC(vc)                {\
-                                        [vc setHidesBottomBarWhenPushed:YES];\
-                                        [self.navigationController pushViewController:vc animated:YES];\
-                                        }
-
-/** 方法交换 */
-#define     ZRExchangeMethod(oldSEL, newSEL) \
-            {\
-            Method oldMethod = class_getInstanceMethod(self, oldSEL);\
-            Method newMethod = class_getInstanceMethod(self, newSEL);\
-            method_exchangeImplementations(oldMethod, newMethod);\
-            }\
-
-/** 多线程 */
-#define     ZRBackThread(block) \
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
-
-#define     ZRMainThread(block) \
-            dispatch_async(dispatch_get_main_queue(), block)
-
-#define     ZRMainBarrier(block) \
-            dispatch_barrier_async(dispatch_get_main_queue(), block)
-
-#define     ZRMainAfter(x, block) \
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(x * NSEC_PER_SEC)), dispatch_get_main_queue(), block)
-
-/** 循环引用消除 */
-
-#define     ZRWS(type)              __weak typeof(type) weak##type = type;
-
-#define     ZRSS(type)              __strong typeof(type) strong##type = type;
-
-#ifndef weakify
-    #if DEBUG
-        #if __has_feature(objc_arc)
-            #define weakify(object)     autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
-        #else
-            #define weakify(object)     autoreleasepool{} __block __typeof__(object) block##_##object = object;
-        #endif
-    #else
-        #if __has_feature(objc_arc)
-            #define weakify(object)     try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
-        #else
-            #define weakify(object)     try{} @finally{} {} __block __typeof__(object) block##_##object = object;
-        #endif
-    #endif
-#endif
-
-#ifndef strongify
-    #if DEBUG
-        #if __has_feature(objc_arc)
-            #define strongify(object)   autoreleasepool{} __typeof__(object) object = weak##_##object;
-        #else
-            #define strongify(object)   autoreleasepool{} __typeof__(object) object = block##_##object;
-        #endif
-    #else
-        #if __has_feature(objc_arc)
-            #define strongify(object)   try{} @finally{} __typeof__(object) object = weak##_##object;
-        #else
-            #define strongify(object)   try{} @finally{} __typeof__(object) object = block##_##object;
-        #endif
-    #endif
-#endif
-
-///正常字体
-#define     H30     [UIFont systemFontOfSize:30]
-#define     H29     [UIFont systemFontOfSize:29]
-#define     H28     [UIFont systemFontOfSize:28]
-#define     H27     [UIFont systemFontOfSize:27]
-#define     H26     [UIFont systemFontOfSize:26]
-#define     H25     [UIFont systemFontOfSize:25]
-#define     H24     [UIFont systemFontOfSize:24]
-#define     H23     [UIFont systemFontOfSize:23]
-#define     H22     [UIFont systemFontOfSize:22]
-#define     H20     [UIFont systemFontOfSize:20]
-#define     H19     [UIFont systemFontOfSize:19]
-#define     H18     [UIFont systemFontOfSize:18]
-#define     H17     [UIFont systemFontOfSize:17]
-#define     H16     [UIFont systemFontOfSize:16]
-#define     H15     [UIFont systemFontOfSize:15]
-#define     H14     [UIFont systemFontOfSize:14]
-#define     H13     [UIFont systemFontOfSize:13]
-#define     H12     [UIFont systemFontOfSize:12]
-#define     H11     [UIFont systemFontOfSize:11]
-#define     H10     [UIFont systemFontOfSize:10]
-#define     H9      [UIFont systemFontOfSize:9]
-#define     H8      [UIFont systemFontOfSize:8]
-
-
 /** 当前系统版本版本 */
 #define     KSYSTEMVERSION          [[UIDevice currentDevice] systemVersion]
 /** 等于某个版本 */
@@ -252,5 +147,109 @@
 #define KGetMarginMin               5
 #define KGetMarginMid               8
 #define KGetMarginMax               10
+
+/** 圆角和加边框 */
+#define     ZRBorderRadius(View, Radius, Width, Color) \
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+/** 圆角 */
+#define     ZRRadius(View, Radius) \
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
+
+/** PushVC */
+#define     ZRPushVC(vc)                {\
+[vc setHidesBottomBarWhenPushed:YES];\
+[self.navigationController pushViewController:vc animated:YES];\
+}
+
+/** 方法交换 */
+#define     ZRExchangeMethod(oldSEL, newSEL) \
+{\
+Method oldMethod = class_getInstanceMethod(self, oldSEL);\
+Method newMethod = class_getInstanceMethod(self, newSEL);\
+method_exchangeImplementations(oldMethod, newMethod);\
+}\
+
+/** 多线程 */
+#define     ZRBackThread(block) \
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+
+#define     ZRMainThread(block) \
+dispatch_async(dispatch_get_main_queue(), block)
+
+#define     ZRMainBarrier(block) \
+dispatch_barrier_async(dispatch_get_main_queue(), block)
+
+#define     ZRMainAfter(x, block) \
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(x * NSEC_PER_SEC)), dispatch_get_main_queue(), block)
+
+/** 循环引用消除 */
+
+#define     ZRWS(type)              __weak typeof(type) weak##type = type;
+
+#define     ZRSS(type)              __strong typeof(type) strong##type = type;
+
+#ifndef weakify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define weakify(object)     autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object)     autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define weakify(object)     try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object)     try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef strongify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define strongify(object)   autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object)   autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define strongify(object)   try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object)   try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
+
+///正常字体
+#define     H30     [UIFont systemFontOfSize:30]
+#define     H29     [UIFont systemFontOfSize:29]
+#define     H28     [UIFont systemFontOfSize:28]
+#define     H27     [UIFont systemFontOfSize:27]
+#define     H26     [UIFont systemFontOfSize:26]
+#define     H25     [UIFont systemFontOfSize:25]
+#define     H24     [UIFont systemFontOfSize:24]
+#define     H23     [UIFont systemFontOfSize:23]
+#define     H22     [UIFont systemFontOfSize:22]
+#define     H20     [UIFont systemFontOfSize:20]
+#define     H19     [UIFont systemFontOfSize:19]
+#define     H18     [UIFont systemFontOfSize:18]
+#define     H17     [UIFont systemFontOfSize:17]
+#define     H16     [UIFont systemFontOfSize:16]
+#define     H15     [UIFont systemFontOfSize:15]
+#define     H14     [UIFont systemFontOfSize:14]
+#define     H13     [UIFont systemFontOfSize:13]
+#define     H12     [UIFont systemFontOfSize:12]
+#define     H11     [UIFont systemFontOfSize:11]
+#define     H10     [UIFont systemFontOfSize:10]
+#define     H9      [UIFont systemFontOfSize:9]
+#define     H8      [UIFont systemFontOfSize:8]
 
 #endif /* ZRToolMacro_h */

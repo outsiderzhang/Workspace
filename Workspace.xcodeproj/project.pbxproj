@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */; };
+		22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */; };
+		22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */; };
+		22A658E420A3E92A00D47BC5 /* ZRBadgeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658E320A3E92A00D47BC5 /* ZRBadgeValue.m */; };
+		22A658EA20A3E9A100D47BC5 /* ZRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658E920A3E9A100D47BC5 /* ZRConfig.m */; };
+		22A658F120A41CDD00D47BC5 /* UIView+TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658F020A41CDD00D47BC5 /* UIView+TabBar.m */; };
+		22A658FA20A41D2800D47BC5 /* CAAnimation+TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658F920A41D2800D47BC5 /* CAAnimation+TabBar.m */; };
+		22A658FD20A41D3C00D47BC5 /* UIColor+TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658FC20A41D3C00D47BC5 /* UIColor+TabBar.m */; };
 		22AC50E72094431700A69671 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AC50E62094431700A69671 /* AppDelegate.m */; };
 		22AC50EA2094431700A69671 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AC50E92094431700A69671 /* ViewController.m */; };
 		22AC50ED2094431700A69671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AC50EB2094431700A69671 /* Main.storyboard */; };
@@ -22,6 +30,22 @@
 		2274BC9220A2EEC100FD966E /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		2274BC9320A2EEDA00FD966E /* LibTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibTest.h; sourceTree = "<group>"; };
 		2274BC9420A2EEEB00FD966E /* Resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		22A658D920A3E88000D47BC5 /* ZRTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRTabBarController.h; sourceTree = "<group>"; };
+		22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRTabBarController.m; sourceTree = "<group>"; };
+		22A658DC20A3E8A500D47BC5 /* ZRTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRTabBar.h; sourceTree = "<group>"; };
+		22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRTabBar.m; sourceTree = "<group>"; };
+		22A658DF20A3E8FF00D47BC5 /* ZRTabBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRTabBarButton.h; sourceTree = "<group>"; };
+		22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRTabBarButton.m; sourceTree = "<group>"; };
+		22A658E220A3E92A00D47BC5 /* ZRBadgeValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRBadgeValue.h; sourceTree = "<group>"; };
+		22A658E320A3E92A00D47BC5 /* ZRBadgeValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRBadgeValue.m; sourceTree = "<group>"; };
+		22A658E820A3E9A100D47BC5 /* ZRConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRConfig.h; sourceTree = "<group>"; };
+		22A658E920A3E9A100D47BC5 /* ZRConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRConfig.m; sourceTree = "<group>"; };
+		22A658EF20A41CDD00D47BC5 /* UIView+TabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TabBar.h"; sourceTree = "<group>"; };
+		22A658F020A41CDD00D47BC5 /* UIView+TabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TabBar.m"; sourceTree = "<group>"; };
+		22A658F820A41D2800D47BC5 /* CAAnimation+TabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+TabBar.h"; sourceTree = "<group>"; };
+		22A658F920A41D2800D47BC5 /* CAAnimation+TabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+TabBar.m"; sourceTree = "<group>"; };
+		22A658FB20A41D3C00D47BC5 /* UIColor+TabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TabBar.h"; sourceTree = "<group>"; };
+		22A658FC20A41D3C00D47BC5 /* UIColor+TabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TabBar.m"; sourceTree = "<group>"; };
 		22AC50E22094431700A69671 /* Workspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AC50E52094431700A69671 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22AC50E62094431700A69671 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,10 +129,42 @@
 		2274BC8B20A2C42E00FD966E /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				22A658D820A3E81900D47BC5 /* ZRTabBarController */,
 				22AC50E82094431700A69671 /* ViewController.h */,
 				22AC50E92094431700A69671 /* ViewController.m */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		22A658D820A3E81900D47BC5 /* ZRTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				22A658EB20A41A6C00D47BC5 /* Utility */,
+				22A658D920A3E88000D47BC5 /* ZRTabBarController.h */,
+				22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */,
+				22A658DC20A3E8A500D47BC5 /* ZRTabBar.h */,
+				22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */,
+				22A658DF20A3E8FF00D47BC5 /* ZRTabBarButton.h */,
+				22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */,
+				22A658E220A3E92A00D47BC5 /* ZRBadgeValue.h */,
+				22A658E320A3E92A00D47BC5 /* ZRBadgeValue.m */,
+				22A658E820A3E9A100D47BC5 /* ZRConfig.h */,
+				22A658E920A3E9A100D47BC5 /* ZRConfig.m */,
+			);
+			path = ZRTabBarController;
+			sourceTree = "<group>";
+		};
+		22A658EB20A41A6C00D47BC5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				22A658EF20A41CDD00D47BC5 /* UIView+TabBar.h */,
+				22A658F020A41CDD00D47BC5 /* UIView+TabBar.m */,
+				22A658FB20A41D3C00D47BC5 /* UIColor+TabBar.h */,
+				22A658FC20A41D3C00D47BC5 /* UIColor+TabBar.m */,
+				22A658F820A41D2800D47BC5 /* CAAnimation+TabBar.h */,
+				22A658F920A41D2800D47BC5 /* CAAnimation+TabBar.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		22AC50D92094431700A69671 = {
@@ -292,6 +348,14 @@
 				22AC50EA2094431700A69671 /* ViewController.m in Sources */,
 				22AC50F52094432100A69671 /* main.m in Sources */,
 				22AC50E72094431700A69671 /* AppDelegate.m in Sources */,
+				22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */,
+				22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */,
+				22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */,
+				22A658FD20A41D3C00D47BC5 /* UIColor+TabBar.m in Sources */,
+				22A658F120A41CDD00D47BC5 /* UIView+TabBar.m in Sources */,
+				22A658E420A3E92A00D47BC5 /* ZRBadgeValue.m in Sources */,
+				22A658FA20A41D2800D47BC5 /* CAAnimation+TabBar.m in Sources */,
+				22A658EA20A3E9A100D47BC5 /* ZRConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
