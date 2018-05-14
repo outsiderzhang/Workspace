@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */; };
 		2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */; };
+		2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */; };
 		22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */; };
 		22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */; };
 		22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */; };
@@ -32,6 +33,8 @@
 		2270DA6520A9595400DB3B6C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2270DA6620A96EDB00DB3B6C /* ZRNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkCache.h; sourceTree = "<group>"; };
 		2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkCache.m; sourceTree = "<group>"; };
+		2270DA6920A9862F00DB3B6C /* ZRInterfaceConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRInterfaceConst.h; sourceTree = "<group>"; };
+		2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRInterfaceConst.m; sourceTree = "<group>"; };
 		2274BC9020A2CB8700FD966E /* ZRToolMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRToolMacro.h; sourceTree = "<group>"; };
 		2274BC9120A2E2C700FD966E /* ZRAppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRAppMacro.h; sourceTree = "<group>"; };
 		2274BC9220A2EEC100FD966E /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */,
 				2270DA6620A96EDB00DB3B6C /* ZRNetworkCache.h */,
 				2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */,
+				2270DA6920A9862F00DB3B6C /* ZRInterfaceConst.h */,
+				2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */,
 			);
 			path = HttpServer;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */,
 				22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */,
 				22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */,
+				2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */,
 				22A658FD20A41D3C00D47BC5 /* UIColor+TabBar.m in Sources */,
 				22A658F120A41CDD00D47BC5 /* UIView+TabBar.m in Sources */,
 				2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */,
@@ -525,7 +531,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Workspace/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Workspace/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.Workspace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -543,7 +552,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Workspace/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Workspace/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.Workspace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
