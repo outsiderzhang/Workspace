@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */; };
+		2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */; };
 		22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */; };
 		22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */; };
 		22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */; };
@@ -25,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2270DA6220A92D2F00DB3B6C /* ZRNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkHelper.h; sourceTree = "<group>"; };
+		2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkHelper.m; sourceTree = "<group>"; };
+		2270DA6520A9595400DB3B6C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2270DA6620A96EDB00DB3B6C /* ZRNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkCache.h; sourceTree = "<group>"; };
+		2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkCache.m; sourceTree = "<group>"; };
 		2274BC9020A2CB8700FD966E /* ZRToolMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRToolMacro.h; sourceTree = "<group>"; };
 		2274BC9120A2E2C700FD966E /* ZRAppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRAppMacro.h; sourceTree = "<group>"; };
 		2274BC9220A2EEC100FD966E /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -73,6 +80,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2270DA6120A923F400DB3B6C /* HttpServer */ = {
+			isa = PBXGroup;
+			children = (
+				2270DA6220A92D2F00DB3B6C /* ZRNetworkHelper.h */,
+				2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */,
+				2270DA6620A96EDB00DB3B6C /* ZRNetworkCache.h */,
+				2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */,
+			);
+			path = HttpServer;
+			sourceTree = "<group>";
+		};
 		2274BC8520A2C34A00FD966E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +122,7 @@
 				22AC50F02094432100A69671 /* LaunchScreen.storyboard */,
 				22AC50F32094432100A69671 /* Info.plist */,
 				22AC50F42094432100A69671 /* main.m */,
+				2270DA6520A9595400DB3B6C /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -129,14 +148,13 @@
 		2274BC8B20A2C42E00FD966E /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				22A658D820A3E81900D47BC5 /* ZRTabBarController */,
 				22AC50E82094431700A69671 /* ViewController.h */,
 				22AC50E92094431700A69671 /* ViewController.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
 		};
-		22A658D820A3E81900D47BC5 /* ZRTabBarController */ = {
+		22A658D820A3E81900D47BC5 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				22A658EB20A41A6C00D47BC5 /* Utility */,
@@ -151,7 +169,7 @@
 				22A658E820A3E9A100D47BC5 /* ZRConfig.h */,
 				22A658E920A3E9A100D47BC5 /* ZRConfig.m */,
 			);
-			path = ZRTabBarController;
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		22A658EB20A41A6C00D47BC5 /* Utility */ = {
@@ -191,6 +209,8 @@
 			children = (
 				2274BC8A20A2C41D00FD966E /* AppDelegate */,
 				2274BC8B20A2C42E00FD966E /* Module */,
+				22A658D820A3E81900D47BC5 /* TabBar */,
+				2270DA6120A923F400DB3B6C /* HttpServer */,
 				2274BC8920A2C3EB00FD966E /* Macro */,
 				2274BC8620A2C35100FD966E /* Utilities */,
 				2274BC8520A2C34A00FD966E /* Lib */,
@@ -320,6 +340,7 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -332,6 +353,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -345,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */,
 				22AC50EA2094431700A69671 /* ViewController.m in Sources */,
 				22AC50F52094432100A69671 /* main.m in Sources */,
 				22AC50E72094431700A69671 /* AppDelegate.m in Sources */,
@@ -353,6 +376,7 @@
 				22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */,
 				22A658FD20A41D3C00D47BC5 /* UIColor+TabBar.m in Sources */,
 				22A658F120A41CDD00D47BC5 /* UIView+TabBar.m in Sources */,
+				2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */,
 				22A658E420A3E92A00D47BC5 /* ZRBadgeValue.m in Sources */,
 				22A658FA20A41D2800D47BC5 /* CAAnimation+TabBar.m in Sources */,
 				22A658EA20A3E9A100D47BC5 /* ZRConfig.m in Sources */,
@@ -498,12 +522,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Workspace/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Workspace/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.Workspace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -518,12 +540,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Workspace/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Workspace/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.Workspace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

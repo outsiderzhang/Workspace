@@ -12,4 +12,5 @@ pod 'IQKeyboardManager', '~> 5.0.6'
 pod 'DACircularProgress', '~> 2.3.1'
 pod 'SVProgressHUD'
 pod 'MBProgressHUD', '~> 1.1.0'
+pod 'YYCache'
 end
