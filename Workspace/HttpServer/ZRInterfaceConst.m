@@ -10,7 +10,7 @@
 
 #if DevelopSever
 /** 接口前缀-开发服务器*/
-NSString *const KSERVERURLPREFIX = @"http://192.168.10.10:8080";
+NSString *const KSERVERURLPREFIX = @"http://api.budejie.com/api/api_open.php";
 #elif TestSever
 /** 接口前缀-测试服务器*/
 NSString *const KSERVERURLPREFIX = @"https://www.baidu.com";
@@ -20,5 +20,5 @@ NSString *const KSERVERURLPREFIX = @"https://www.baidu.com";
 #endif
 
 /** 登录*/
-NSString *const KAPILOGIN = @"/login";
+NSString *const KAPILOGIN = @"";
 

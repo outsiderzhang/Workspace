@@ -14,9 +14,9 @@
 
 /* 打印提示 */
 #ifdef DEBUG
-    #define DLog( s, ... ) NSLog( @"< %@:(%d) > %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+    #define DLog(...) printf("[%s] %s [第%d行]: %s\n", __TIME__ ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
 #else
-    #define DLog( s, ... )
+    #define DLog(...)
 #endif
 
 #pragma mark -- 方法简写

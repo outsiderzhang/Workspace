@@ -63,9 +63,9 @@ typedef void(^ZRHttpRequestFailed)(NSError *error);
 /**
  请求缓存block
 
- @param responseCache 缓存
+ @param cacheObject 缓存
  */
-typedef void(^ZRHttpRequestCache)(id responseCache);
+typedef void(^ZRHttpRequestCache)(id cacheObject);
 
 /**
  上传/下载进度
@@ -95,11 +95,11 @@ typedef void(^ZRNetworkStatus)(ZRNetworkStatusType status);
 /** WiFi网络:YES, 反之:NO */
 + (BOOL)isWiFiNetwork;
 
-/** 取消所有HTTP请求 */
-+ (void)cancelAllRequest;
-
 /** 实时获取网络状态,通过Block回调实时获取(此方法可多次调用) */
 + (void)networkStatusWithBlock:(ZRNetworkStatus)networkStatus;
+
+/** 取消所有HTTP请求 */
++ (void)cancelAllRequest;
 
 /** 取消指定URL的HTTP请求 */
 + (void)cancelRequestWithURL:(NSString *)URL;

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22282D8920AA6D10006493B2 /* ZRHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D8820AA6D10006493B2 /* ZRHTTPRequest.m */; };
+		22282D8C20AA7537006493B2 /* ZRLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D8B20AA7537006493B2 /* ZRLoginRequest.m */; };
+		22282D9620AAB22B006493B2 /* ZRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D9520AAB22B006493B2 /* ZRRequest.m */; };
+		22282D9920AAB247006493B2 /* ZRResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D9820AAB247006493B2 /* ZRResponse.m */; };
+		22282D9C20AAB280006493B2 /* ZRDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D9B20AAB280006493B2 /* ZRDownloadRequest.m */; };
+		22282D9F20AAB297006493B2 /* ZRUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D9E20AAB297006493B2 /* ZRUploadRequest.m */; };
+		22282DA220AAB336006493B2 /* ZRNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DA120AAB336006493B2 /* ZRNetworkConfig.m */; };
+		22282DA520AAB384006493B2 /* ZRNetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DA420AAB384006493B2 /* ZRNetworkStatus.m */; };
+		22282DA820AAB436006493B2 /* ZRNetworkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DA720AAB436006493B2 /* ZRNetworkUtility.m */; };
+		22282DAB20AAB47F006493B2 /* ZRNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DAA20AAB47F006493B2 /* ZRNetworkAgent.m */; };
+		22282DAE20AAB4A9006493B2 /* ZRNetworkSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DAD20AAB4A9006493B2 /* ZRNetworkSerializer.m */; };
 		2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */; };
 		2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */; };
 		2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */; };
@@ -28,6 +39,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22282D8720AA6D10006493B2 /* ZRHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRHTTPRequest.h; sourceTree = "<group>"; };
+		22282D8820AA6D10006493B2 /* ZRHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRHTTPRequest.m; sourceTree = "<group>"; };
+		22282D8A20AA7537006493B2 /* ZRLoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRLoginRequest.h; sourceTree = "<group>"; };
+		22282D8B20AA7537006493B2 /* ZRLoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRLoginRequest.m; sourceTree = "<group>"; };
+		22282D9420AAB22B006493B2 /* ZRRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRRequest.h; sourceTree = "<group>"; };
+		22282D9520AAB22B006493B2 /* ZRRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRRequest.m; sourceTree = "<group>"; };
+		22282D9720AAB247006493B2 /* ZRResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRResponse.h; sourceTree = "<group>"; };
+		22282D9820AAB247006493B2 /* ZRResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRResponse.m; sourceTree = "<group>"; };
+		22282D9A20AAB280006493B2 /* ZRDownloadRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRDownloadRequest.h; sourceTree = "<group>"; };
+		22282D9B20AAB280006493B2 /* ZRDownloadRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRDownloadRequest.m; sourceTree = "<group>"; };
+		22282D9D20AAB297006493B2 /* ZRUploadRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRUploadRequest.h; sourceTree = "<group>"; };
+		22282D9E20AAB297006493B2 /* ZRUploadRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRUploadRequest.m; sourceTree = "<group>"; };
+		22282DA020AAB336006493B2 /* ZRNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkConfig.h; sourceTree = "<group>"; };
+		22282DA120AAB336006493B2 /* ZRNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkConfig.m; sourceTree = "<group>"; };
+		22282DA320AAB384006493B2 /* ZRNetworkStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkStatus.h; sourceTree = "<group>"; };
+		22282DA420AAB384006493B2 /* ZRNetworkStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkStatus.m; sourceTree = "<group>"; };
+		22282DA620AAB436006493B2 /* ZRNetworkUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkUtility.h; sourceTree = "<group>"; };
+		22282DA720AAB436006493B2 /* ZRNetworkUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkUtility.m; sourceTree = "<group>"; };
+		22282DA920AAB47F006493B2 /* ZRNetworkAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkAgent.h; sourceTree = "<group>"; };
+		22282DAA20AAB47F006493B2 /* ZRNetworkAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkAgent.m; sourceTree = "<group>"; };
+		22282DAC20AAB4A9006493B2 /* ZRNetworkSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkSerializer.h; sourceTree = "<group>"; };
+		22282DAD20AAB4A9006493B2 /* ZRNetworkSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkSerializer.m; sourceTree = "<group>"; };
+		22282DAF20AAB52E006493B2 /* ZRRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRRequestProtocol.h; sourceTree = "<group>"; };
 		2270DA6220A92D2F00DB3B6C /* ZRNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkHelper.h; sourceTree = "<group>"; };
 		2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkHelper.m; sourceTree = "<group>"; };
 		2270DA6520A9595400DB3B6C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -83,6 +117,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22282D8D20AAAEBC006493B2 /* ZRNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				22282D9320AAB188006493B2 /* Helper */,
+				22282D9220AAB03A006493B2 /* Utility */,
+				22282D9120AAB031006493B2 /* Config */,
+				22282D8F20AAAFAE006493B2 /* Response */,
+				22282D8E20AAAF44006493B2 /* Request */,
+			);
+			path = ZRNetwork;
+			sourceTree = "<group>";
+		};
+		22282D8E20AAAF44006493B2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				22282D9420AAB22B006493B2 /* ZRRequest.h */,
+				22282D9520AAB22B006493B2 /* ZRRequest.m */,
+				22282DAF20AAB52E006493B2 /* ZRRequestProtocol.h */,
+				22282D9A20AAB280006493B2 /* ZRDownloadRequest.h */,
+				22282D9B20AAB280006493B2 /* ZRDownloadRequest.m */,
+				22282D9D20AAB297006493B2 /* ZRUploadRequest.h */,
+				22282D9E20AAB297006493B2 /* ZRUploadRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		22282D8F20AAAFAE006493B2 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				22282D9720AAB247006493B2 /* ZRResponse.h */,
+				22282D9820AAB247006493B2 /* ZRResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		22282D9120AAB031006493B2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				22282DA020AAB336006493B2 /* ZRNetworkConfig.h */,
+				22282DA120AAB336006493B2 /* ZRNetworkConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		22282D9220AAB03A006493B2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				22282DA320AAB384006493B2 /* ZRNetworkStatus.h */,
+				22282DA420AAB384006493B2 /* ZRNetworkStatus.m */,
+				22282DA620AAB436006493B2 /* ZRNetworkUtility.h */,
+				22282DA720AAB436006493B2 /* ZRNetworkUtility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		22282D9320AAB188006493B2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				22282DA920AAB47F006493B2 /* ZRNetworkAgent.h */,
+				22282DAA20AAB47F006493B2 /* ZRNetworkAgent.m */,
+				22282DAC20AAB4A9006493B2 /* ZRNetworkSerializer.h */,
+				22282DAD20AAB4A9006493B2 /* ZRNetworkSerializer.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		2270DA6120A923F400DB3B6C /* HttpServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +192,10 @@
 				2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */,
 				2270DA6920A9862F00DB3B6C /* ZRInterfaceConst.h */,
 				2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */,
+				22282D8720AA6D10006493B2 /* ZRHTTPRequest.h */,
+				22282D8820AA6D10006493B2 /* ZRHTTPRequest.m */,
+				22282D8A20AA7537006493B2 /* ZRLoginRequest.h */,
+				22282D8B20AA7537006493B2 /* ZRLoginRequest.m */,
 			);
 			path = HttpServer;
 			sourceTree = "<group>";
@@ -212,6 +316,7 @@
 		22AC50E42094431700A69671 /* Workspace */ = {
 			isa = PBXGroup;
 			children = (
+				22282D8D20AAAEBC006493B2 /* ZRNetwork */,
 				2274BC8A20A2C41D00FD966E /* AppDelegate */,
 				2274BC8B20A2C42E00FD966E /* Module */,
 				22A658D820A3E81900D47BC5 /* TabBar */,
@@ -372,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22282DAB20AAB47F006493B2 /* ZRNetworkAgent.m in Sources */,
 				2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */,
 				22AC50EA2094431700A69671 /* ViewController.m in Sources */,
 				22AC50F52094432100A69671 /* main.m in Sources */,
@@ -380,11 +486,21 @@
 				22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */,
 				22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */,
 				2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */,
+				22282D9920AAB247006493B2 /* ZRResponse.m in Sources */,
+				22282D9C20AAB280006493B2 /* ZRDownloadRequest.m in Sources */,
+				22282D9620AAB22B006493B2 /* ZRRequest.m in Sources */,
 				22A658FD20A41D3C00D47BC5 /* UIColor+TabBar.m in Sources */,
+				22282DA520AAB384006493B2 /* ZRNetworkStatus.m in Sources */,
+				22282D8C20AA7537006493B2 /* ZRLoginRequest.m in Sources */,
 				22A658F120A41CDD00D47BC5 /* UIView+TabBar.m in Sources */,
 				2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */,
 				22A658E420A3E92A00D47BC5 /* ZRBadgeValue.m in Sources */,
+				22282DA220AAB336006493B2 /* ZRNetworkConfig.m in Sources */,
+				22282D8920AA6D10006493B2 /* ZRHTTPRequest.m in Sources */,
+				22282DAE20AAB4A9006493B2 /* ZRNetworkSerializer.m in Sources */,
 				22A658FA20A41D2800D47BC5 /* CAAnimation+TabBar.m in Sources */,
+				22282D9F20AAB297006493B2 /* ZRUploadRequest.m in Sources */,
+				22282DA820AAB436006493B2 /* ZRNetworkUtility.m in Sources */,
 				22A658EA20A3E9A100D47BC5 /* ZRConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

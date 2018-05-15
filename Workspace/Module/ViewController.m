@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ZRLoginRequest.h"
 @interface ViewController ()
 
 @end
@@ -21,9 +21,25 @@
     //工作分支
     //1. Task...
     //2. Task...
+    
+//    [ZRLoginRequest loginWithParameters:para responseCache:^(id cacheObject) {
+//        DLog(@"cacheObject:%@", cacheObject);
+//    } success:^(id responseObject) {
+//        DLog(@"responseObject:%@", responseObject);
+//    } failure:^(NSError *error) {
+//        DLog(@"error:%@", error);
+//    }];
+    
+    
 }
 
-
+- (void)tapMethod:(UIGestureRecognizer *)gesture
+{
+    if ([gesture.view isMemberOfClass:[UILabel class]]) {
+        UILabel *label = (UILabel *)gesture.view;
+        label.text = [NSString stringWithFormat:@"%@%@", label.text, @"I like cheese."];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
