@@ -33,13 +33,6 @@
     
 }
 
-- (void)tapMethod:(UIGestureRecognizer *)gesture
-{
-    if ([gesture.view isMemberOfClass:[UILabel class]]) {
-        UILabel *label = (UILabel *)gesture.view;
-        label.text = [NSString stringWithFormat:@"%@%@", label.text, @"I like cheese."];
-    }
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

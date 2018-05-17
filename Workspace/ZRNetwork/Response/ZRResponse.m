@@ -10,4 +10,24 @@
 
 @implementation ZRResponse
 
+- (id)initWithRequest:(__kindof ZRRequest *)request responseObject:(id)responseObject error:(NSError *)error
+{
+    if (self = [super init]) {
+        
+        _request = request;
+        _responseObject = responseObject;
+        _error = error;
+        
+        if (error || !responseObject) {
+            _success = NO;
+        }else{
+            _success = YES;
+        }
+        
+        if ([responseObject isKindOfClass:[NSData class]]) {
+            //_responseString = [NSString alloc] initWithData:responseObject encoding:self.customResponse.
+        }
+    }
+    return self;
+}
 @end

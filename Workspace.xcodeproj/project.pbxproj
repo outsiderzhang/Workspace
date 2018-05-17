@@ -21,6 +21,10 @@
 		2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */; };
 		2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */; };
 		2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */; };
+		2273483520AC1EA30026F466 /* NSHTTPURLResponse+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273483420AC1EA30026F466 /* NSHTTPURLResponse+Network.m */; };
+		2273483820AC1ED30026F466 /* NSMutableURLRequest+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273483720AC1ED30026F466 /* NSMutableURLRequest+Network.m */; };
+		2273483B20AC1EED0026F466 /* NSURL+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273483A20AC1EED0026F466 /* NSURL+Network.m */; };
+		2273483E20AC1F050026F466 /* NSString+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273483D20AC1F050026F466 /* NSString+Network.m */; };
 		22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */; };
 		22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */; };
 		22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */; };
@@ -69,6 +73,14 @@
 		2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkCache.m; sourceTree = "<group>"; };
 		2270DA6920A9862F00DB3B6C /* ZRInterfaceConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRInterfaceConst.h; sourceTree = "<group>"; };
 		2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRInterfaceConst.m; sourceTree = "<group>"; };
+		2273483320AC1EA30026F466 /* NSHTTPURLResponse+Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+Network.h"; sourceTree = "<group>"; };
+		2273483420AC1EA30026F466 /* NSHTTPURLResponse+Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+Network.m"; sourceTree = "<group>"; };
+		2273483620AC1ED30026F466 /* NSMutableURLRequest+Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Network.h"; sourceTree = "<group>"; };
+		2273483720AC1ED30026F466 /* NSMutableURLRequest+Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Network.m"; sourceTree = "<group>"; };
+		2273483920AC1EED0026F466 /* NSURL+Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Network.h"; sourceTree = "<group>"; };
+		2273483A20AC1EED0026F466 /* NSURL+Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Network.m"; sourceTree = "<group>"; };
+		2273483C20AC1F050026F466 /* NSString+Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Network.h"; sourceTree = "<group>"; };
+		2273483D20AC1F050026F466 /* NSString+Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Network.m"; sourceTree = "<group>"; };
 		2274BC9020A2CB8700FD966E /* ZRToolMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRToolMacro.h; sourceTree = "<group>"; };
 		2274BC9120A2E2C700FD966E /* ZRAppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRAppMacro.h; sourceTree = "<group>"; };
 		2274BC9220A2EEC100FD966E /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -120,6 +132,7 @@
 		22282D8D20AAAEBC006493B2 /* ZRNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				2273482F20AC1E4A0026F466 /* Category */,
 				22282D9320AAB188006493B2 /* Helper */,
 				22282D9220AAB03A006493B2 /* Utility */,
 				22282D9120AAB031006493B2 /* Config */,
@@ -198,6 +211,21 @@
 				22282D8B20AA7537006493B2 /* ZRLoginRequest.m */,
 			);
 			path = HttpServer;
+			sourceTree = "<group>";
+		};
+		2273482F20AC1E4A0026F466 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2273483320AC1EA30026F466 /* NSHTTPURLResponse+Network.h */,
+				2273483420AC1EA30026F466 /* NSHTTPURLResponse+Network.m */,
+				2273483620AC1ED30026F466 /* NSMutableURLRequest+Network.h */,
+				2273483720AC1ED30026F466 /* NSMutableURLRequest+Network.m */,
+				2273483920AC1EED0026F466 /* NSURL+Network.h */,
+				2273483A20AC1EED0026F466 /* NSURL+Network.m */,
+				2273483C20AC1F050026F466 /* NSString+Network.h */,
+				2273483D20AC1F050026F466 /* NSString+Network.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		2274BC8520A2C34A00FD966E /* Lib */ = {
@@ -478,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22282DAB20AAB47F006493B2 /* ZRNetworkAgent.m in Sources */,
+				2273483E20AC1F050026F466 /* NSString+Network.m in Sources */,
 				2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */,
 				22AC50EA2094431700A69671 /* ViewController.m in Sources */,
 				22AC50F52094432100A69671 /* main.m in Sources */,
@@ -492,13 +521,16 @@
 				22A658FD20A41D3C00D47BC5 /* UIColor+TabBar.m in Sources */,
 				22282DA520AAB384006493B2 /* ZRNetworkStatus.m in Sources */,
 				22282D8C20AA7537006493B2 /* ZRLoginRequest.m in Sources */,
+				2273483B20AC1EED0026F466 /* NSURL+Network.m in Sources */,
 				22A658F120A41CDD00D47BC5 /* UIView+TabBar.m in Sources */,
 				2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */,
 				22A658E420A3E92A00D47BC5 /* ZRBadgeValue.m in Sources */,
 				22282DA220AAB336006493B2 /* ZRNetworkConfig.m in Sources */,
 				22282D8920AA6D10006493B2 /* ZRHTTPRequest.m in Sources */,
+				2273483520AC1EA30026F466 /* NSHTTPURLResponse+Network.m in Sources */,
 				22282DAE20AAB4A9006493B2 /* ZRNetworkSerializer.m in Sources */,
 				22A658FA20A41D2800D47BC5 /* CAAnimation+TabBar.m in Sources */,
+				2273483820AC1ED30026F466 /* NSMutableURLRequest+Network.m in Sources */,
 				22282D9F20AAB297006493B2 /* ZRUploadRequest.m in Sources */,
 				22282DA820AAB436006493B2 /* ZRNetworkUtility.m in Sources */,
 				22A658EA20A3E9A100D47BC5 /* ZRConfig.m in Sources */,
