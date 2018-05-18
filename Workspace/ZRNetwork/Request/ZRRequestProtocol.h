@@ -72,7 +72,7 @@ typedef NS_ENUM(NSInteger, ZRRequestPriority) {
  - ZRRequestStateCanceling: 取消
  - ZRRequestStateCompleted: 完成
  */
-typedef NS_ENUM(NSUIteger, ZRRequestState) {
+typedef NS_ENUM(NSUInteger, ZRRequestState) {
     ZRRequestStateRunning,
     ZRRequestStateSuspended,
     ZRRequestStateCanceling,

@@ -18,6 +18,10 @@
 		22282DA820AAB436006493B2 /* ZRNetworkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DA720AAB436006493B2 /* ZRNetworkUtility.m */; };
 		22282DAB20AAB47F006493B2 /* ZRNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DAA20AAB47F006493B2 /* ZRNetworkAgent.m */; };
 		22282DAE20AAB4A9006493B2 /* ZRNetworkSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282DAD20AAB4A9006493B2 /* ZRNetworkSerializer.m */; };
+		224E412120AD45B600F7B54D /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E412020AD45B600F7B54D /* UIScrollView+Refresh.m */; };
+		224E412720AD6CBD00F7B54D /* ZREmptyDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E412620AD6CBD00F7B54D /* ZREmptyDataVC.m */; };
+		224E412A20AD6CF500F7B54D /* ZRRefreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E412920AD6CF500F7B54D /* ZRRefreshVC.m */; };
+		224E412D20AD775F00F7B54D /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E412C20AD775F00F7B54D /* UIScrollView+EmptyDataSet.m */; };
 		2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */; };
 		2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6720A96EDB00DB3B6C /* ZRNetworkCache.m */; };
 		2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270DA6A20A9862F00DB3B6C /* ZRInterfaceConst.m */; };
@@ -66,6 +70,14 @@
 		22282DAC20AAB4A9006493B2 /* ZRNetworkSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkSerializer.h; sourceTree = "<group>"; };
 		22282DAD20AAB4A9006493B2 /* ZRNetworkSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkSerializer.m; sourceTree = "<group>"; };
 		22282DAF20AAB52E006493B2 /* ZRRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRRequestProtocol.h; sourceTree = "<group>"; };
+		224E411F20AD45B600F7B54D /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		224E412020AD45B600F7B54D /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		224E412520AD6CBD00F7B54D /* ZREmptyDataVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZREmptyDataVC.h; sourceTree = "<group>"; };
+		224E412620AD6CBD00F7B54D /* ZREmptyDataVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZREmptyDataVC.m; sourceTree = "<group>"; };
+		224E412820AD6CF400F7B54D /* ZRRefreshVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRRefreshVC.h; sourceTree = "<group>"; };
+		224E412920AD6CF500F7B54D /* ZRRefreshVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRRefreshVC.m; sourceTree = "<group>"; };
+		224E412B20AD775F00F7B54D /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		224E412C20AD775F00F7B54D /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		2270DA6220A92D2F00DB3B6C /* ZRNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNetworkHelper.h; sourceTree = "<group>"; };
 		2270DA6320A92D2F00DB3B6C /* ZRNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNetworkHelper.m; sourceTree = "<group>"; };
 		2270DA6520A9595400DB3B6C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -196,6 +208,17 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		224E411E20AD453C00F7B54D /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				224E411F20AD45B600F7B54D /* UIScrollView+Refresh.h */,
+				224E412020AD45B600F7B54D /* UIScrollView+Refresh.m */,
+				224E412B20AD775F00F7B54D /* UIScrollView+EmptyDataSet.h */,
+				224E412C20AD775F00F7B54D /* UIScrollView+EmptyDataSet.m */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
 		2270DA6120A923F400DB3B6C /* HttpServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +262,7 @@
 		2274BC8620A2C35100FD966E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				224E411E20AD453C00F7B54D /* Refresh */,
 				2274BC9220A2EEC100FD966E /* Utilities.h */,
 			);
 			path = Utilities;
@@ -287,6 +311,10 @@
 			children = (
 				22AC50E82094431700A69671 /* ViewController.h */,
 				22AC50E92094431700A69671 /* ViewController.m */,
+				224E412820AD6CF400F7B54D /* ZRRefreshVC.h */,
+				224E412920AD6CF500F7B54D /* ZRRefreshVC.m */,
+				224E412520AD6CBD00F7B54D /* ZREmptyDataVC.h */,
+				224E412620AD6CBD00F7B54D /* ZREmptyDataVC.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -512,6 +540,7 @@
 				22AC50F52094432100A69671 /* main.m in Sources */,
 				22AC50E72094431700A69671 /* AppDelegate.m in Sources */,
 				22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */,
+				224E412A20AD6CF500F7B54D /* ZRRefreshVC.m in Sources */,
 				22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */,
 				22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */,
 				2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */,
@@ -524,9 +553,12 @@
 				2273483B20AC1EED0026F466 /* NSURL+Network.m in Sources */,
 				22A658F120A41CDD00D47BC5 /* UIView+TabBar.m in Sources */,
 				2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */,
+				224E412120AD45B600F7B54D /* UIScrollView+Refresh.m in Sources */,
 				22A658E420A3E92A00D47BC5 /* ZRBadgeValue.m in Sources */,
+				224E412D20AD775F00F7B54D /* UIScrollView+EmptyDataSet.m in Sources */,
 				22282DA220AAB336006493B2 /* ZRNetworkConfig.m in Sources */,
 				22282D8920AA6D10006493B2 /* ZRHTTPRequest.m in Sources */,
+				224E412720AD6CBD00F7B54D /* ZREmptyDataVC.m in Sources */,
 				2273483520AC1EA30026F466 /* NSHTTPURLResponse+Network.m in Sources */,
 				22282DAE20AAB4A9006493B2 /* ZRNetworkSerializer.m in Sources */,
 				22A658FA20A41D2800D47BC5 /* CAAnimation+TabBar.m in Sources */,
