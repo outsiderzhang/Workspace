@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2203C6B420BBAC700084810F /* ZRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6B320BBAC700084810F /* ZRNavigationController.m */; };
+		2203C6B720BBAC830084810F /* ZRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6B620BBAC830084810F /* ZRViewController.m */; };
+		2203C6BA20BBAFF10084810F /* ZRConfigConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6B920BBAFF10084810F /* ZRConfigConst.m */; };
+		2203C6C020BBD0DB0084810F /* ZRLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6BF20BBD0DB0084810F /* ZRLoginVC.m */; };
+		2203C6C520BBD11B0084810F /* ZRNearlyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6C420BBD11B0084810F /* ZRNearlyVC.m */; };
+		2203C6C920BBD1390084810F /* ZRServiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6C820BBD1390084810F /* ZRServiceVC.m */; };
+		2203C6CD20BBD14D0084810F /* ZRMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6CC20BBD14D0084810F /* ZRMineVC.m */; };
+		2203C6D220BBD4780084810F /* ZRLaunchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6D120BBD4780084810F /* ZRLaunchManager.m */; };
+		2203C6D520BBEB200084810F /* ZRRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6D420BBEB200084810F /* ZRRegisterVC.m */; };
+		2203C6D920BBF1870084810F /* ZRLoginTf.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203C6D820BBF1870084810F /* ZRLoginTf.m */; };
 		22282D8920AA6D10006493B2 /* ZRHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D8820AA6D10006493B2 /* ZRHTTPRequest.m */; };
 		22282D8C20AA7537006493B2 /* ZRLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D8B20AA7537006493B2 /* ZRLoginRequest.m */; };
 		22282D9620AAB22B006493B2 /* ZRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282D9520AAB22B006493B2 /* ZRRequest.m */; };
@@ -47,6 +57,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2203C6B220BBAC700084810F /* ZRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNavigationController.h; sourceTree = "<group>"; };
+		2203C6B320BBAC700084810F /* ZRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNavigationController.m; sourceTree = "<group>"; };
+		2203C6B520BBAC830084810F /* ZRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRViewController.h; sourceTree = "<group>"; };
+		2203C6B620BBAC830084810F /* ZRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRViewController.m; sourceTree = "<group>"; };
+		2203C6B820BBAFF10084810F /* ZRConfigConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRConfigConst.h; sourceTree = "<group>"; };
+		2203C6B920BBAFF10084810F /* ZRConfigConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRConfigConst.m; sourceTree = "<group>"; };
+		2203C6BE20BBD0DB0084810F /* ZRLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRLoginVC.h; sourceTree = "<group>"; };
+		2203C6BF20BBD0DB0084810F /* ZRLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRLoginVC.m; sourceTree = "<group>"; };
+		2203C6C320BBD11B0084810F /* ZRNearlyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNearlyVC.h; sourceTree = "<group>"; };
+		2203C6C420BBD11B0084810F /* ZRNearlyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNearlyVC.m; sourceTree = "<group>"; };
+		2203C6C720BBD1390084810F /* ZRServiceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRServiceVC.h; sourceTree = "<group>"; };
+		2203C6C820BBD1390084810F /* ZRServiceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRServiceVC.m; sourceTree = "<group>"; };
+		2203C6CB20BBD14D0084810F /* ZRMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRMineVC.h; sourceTree = "<group>"; };
+		2203C6CC20BBD14D0084810F /* ZRMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRMineVC.m; sourceTree = "<group>"; };
+		2203C6D020BBD4780084810F /* ZRLaunchManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRLaunchManager.h; sourceTree = "<group>"; };
+		2203C6D120BBD4780084810F /* ZRLaunchManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRLaunchManager.m; sourceTree = "<group>"; };
+		2203C6D320BBEB200084810F /* ZRRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRRegisterVC.h; sourceTree = "<group>"; };
+		2203C6D420BBEB200084810F /* ZRRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRRegisterVC.m; sourceTree = "<group>"; };
+		2203C6D720BBF1870084810F /* ZRLoginTf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRLoginTf.h; sourceTree = "<group>"; };
+		2203C6D820BBF1870084810F /* ZRLoginTf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRLoginTf.m; sourceTree = "<group>"; };
 		22282D8720AA6D10006493B2 /* ZRHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRHTTPRequest.h; sourceTree = "<group>"; };
 		22282D8820AA6D10006493B2 /* ZRHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRHTTPRequest.m; sourceTree = "<group>"; };
 		22282D8A20AA7537006493B2 /* ZRLoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRLoginRequest.h; sourceTree = "<group>"; };
@@ -141,6 +171,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2203C6AE20BBA8A00084810F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6D620BBF0890084810F /* View */,
+				2203C6C120BBD0E10084810F /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2203C6AF20BBA9930084810F /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				22A658D920A3E88000D47BC5 /* ZRTabBarController.h */,
+				22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */,
+				22A658DC20A3E8A500D47BC5 /* ZRTabBar.h */,
+				22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */,
+				22A658DF20A3E8FF00D47BC5 /* ZRTabBarButton.h */,
+				22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */,
+				22A658E220A3E92A00D47BC5 /* ZRBadgeValue.h */,
+				22A658E320A3E92A00D47BC5 /* ZRBadgeValue.m */,
+				22A658E820A3E9A100D47BC5 /* ZRConfig.h */,
+				22A658E920A3E9A100D47BC5 /* ZRConfig.m */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		2203C6B020BBA9A90084810F /* NavController */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6B220BBAC700084810F /* ZRNavigationController.h */,
+				2203C6B320BBAC700084810F /* ZRNavigationController.m */,
+			);
+			path = NavController;
+			sourceTree = "<group>";
+		};
+		2203C6B120BBA9C10084810F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6B520BBAC830084810F /* ZRViewController.h */,
+				2203C6B620BBAC830084810F /* ZRViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2203C6BB20BBCFFA0084810F /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6C220BBD0F90084810F /* ViewController */,
+			);
+			path = Nearby;
+			sourceTree = "<group>";
+		};
+		2203C6BC20BBD0800084810F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6C620BBD11E0084810F /* ViewController */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2203C6BD20BBD09B0084810F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6CA20BBD13D0084810F /* ViewController */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2203C6C120BBD0E10084810F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6BE20BBD0DB0084810F /* ZRLoginVC.h */,
+				2203C6BF20BBD0DB0084810F /* ZRLoginVC.m */,
+				2203C6D320BBEB200084810F /* ZRRegisterVC.h */,
+				2203C6D420BBEB200084810F /* ZRRegisterVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2203C6C220BBD0F90084810F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6C320BBD11B0084810F /* ZRNearlyVC.h */,
+				2203C6C420BBD11B0084810F /* ZRNearlyVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2203C6C620BBD11E0084810F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6C720BBD1390084810F /* ZRServiceVC.h */,
+				2203C6C820BBD1390084810F /* ZRServiceVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2203C6CA20BBD13D0084810F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6CB20BBD14D0084810F /* ZRMineVC.h */,
+				2203C6CC20BBD14D0084810F /* ZRMineVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2203C6CE20BBD2310084810F /* LaunchManager */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6D020BBD4780084810F /* ZRLaunchManager.h */,
+				2203C6D120BBD4780084810F /* ZRLaunchManager.m */,
+			);
+			path = LaunchManager;
+			sourceTree = "<group>";
+		};
+		2203C6CF20BBD2600084810F /* SDKManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDKManager;
+			sourceTree = "<group>";
+		};
+		2203C6D620BBF0890084810F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2203C6D720BBF1870084810F /* ZRLoginTf.h */,
+				2203C6D820BBF1870084810F /* ZRLoginTf.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		22282D8D20AAAEBC006493B2 /* ZRNetwork */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +453,8 @@
 			isa = PBXGroup;
 			children = (
 				2274BC9020A2CB8700FD966E /* ZRToolMacro.h */,
+				2203C6B820BBAFF10084810F /* ZRConfigConst.h */,
+				2203C6B920BBAFF10084810F /* ZRConfigConst.m */,
 				2274BC9120A2E2C700FD966E /* ZRAppMacro.h */,
 			);
 			path = Macro;
@@ -302,6 +465,8 @@
 			children = (
 				22AC50E52094431700A69671 /* AppDelegate.h */,
 				22AC50E62094431700A69671 /* AppDelegate.m */,
+				2203C6CF20BBD2600084810F /* SDKManager */,
+				2203C6CE20BBD2310084810F /* LaunchManager */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -309,6 +474,10 @@
 		2274BC8B20A2C42E00FD966E /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				2203C6BD20BBD09B0084810F /* Mine */,
+				2203C6BC20BBD0800084810F /* Service */,
+				2203C6BB20BBCFFA0084810F /* Nearby */,
+				2203C6AE20BBA8A00084810F /* Login */,
 				22AC50E82094431700A69671 /* ViewController.h */,
 				22AC50E92094431700A69671 /* ViewController.m */,
 				224E412820AD6CF400F7B54D /* ZRRefreshVC.h */,
@@ -319,22 +488,15 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
-		22A658D820A3E81900D47BC5 /* TabBar */ = {
+		22A658D820A3E81900D47BC5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				2203C6B120BBA9C10084810F /* ViewController */,
+				2203C6B020BBA9A90084810F /* NavController */,
+				2203C6AF20BBA9930084810F /* TabbarController */,
 				22A658EB20A41A6C00D47BC5 /* Utility */,
-				22A658D920A3E88000D47BC5 /* ZRTabBarController.h */,
-				22A658DA20A3E88000D47BC5 /* ZRTabBarController.m */,
-				22A658DC20A3E8A500D47BC5 /* ZRTabBar.h */,
-				22A658DD20A3E8A500D47BC5 /* ZRTabBar.m */,
-				22A658DF20A3E8FF00D47BC5 /* ZRTabBarButton.h */,
-				22A658E020A3E8FF00D47BC5 /* ZRTabBarButton.m */,
-				22A658E220A3E92A00D47BC5 /* ZRBadgeValue.h */,
-				22A658E320A3E92A00D47BC5 /* ZRBadgeValue.m */,
-				22A658E820A3E9A100D47BC5 /* ZRConfig.h */,
-				22A658E920A3E9A100D47BC5 /* ZRConfig.m */,
 			);
-			path = TabBar;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		22A658EB20A41A6C00D47BC5 /* Utility */ = {
@@ -375,7 +537,7 @@
 				22282D8D20AAAEBC006493B2 /* ZRNetwork */,
 				2274BC8A20A2C41D00FD966E /* AppDelegate */,
 				2274BC8B20A2C42E00FD966E /* Module */,
-				22A658D820A3E81900D47BC5 /* TabBar */,
+				22A658D820A3E81900D47BC5 /* Base */,
 				2270DA6120A923F400DB3B6C /* HttpServer */,
 				2274BC8920A2C3EB00FD966E /* Macro */,
 				2274BC8620A2C35100FD966E /* Utilities */,
@@ -536,16 +698,24 @@
 				22282DAB20AAB47F006493B2 /* ZRNetworkAgent.m in Sources */,
 				2273483E20AC1F050026F466 /* NSString+Network.m in Sources */,
 				2270DA6420A92D2F00DB3B6C /* ZRNetworkHelper.m in Sources */,
+				2203C6CD20BBD14D0084810F /* ZRMineVC.m in Sources */,
+				2203C6D520BBEB200084810F /* ZRRegisterVC.m in Sources */,
+				2203C6C520BBD11B0084810F /* ZRNearlyVC.m in Sources */,
 				22AC50EA2094431700A69671 /* ViewController.m in Sources */,
 				22AC50F52094432100A69671 /* main.m in Sources */,
+				2203C6C920BBD1390084810F /* ZRServiceVC.m in Sources */,
 				22AC50E72094431700A69671 /* AppDelegate.m in Sources */,
 				22A658DE20A3E8A500D47BC5 /* ZRTabBar.m in Sources */,
 				224E412A20AD6CF500F7B54D /* ZRRefreshVC.m in Sources */,
 				22A658DB20A3E88000D47BC5 /* ZRTabBarController.m in Sources */,
 				22A658E120A3E8FF00D47BC5 /* ZRTabBarButton.m in Sources */,
+				2203C6D920BBF1870084810F /* ZRLoginTf.m in Sources */,
 				2270DA6B20A9862F00DB3B6C /* ZRInterfaceConst.m in Sources */,
+				2203C6B420BBAC700084810F /* ZRNavigationController.m in Sources */,
+				2203C6D220BBD4780084810F /* ZRLaunchManager.m in Sources */,
 				22282D9920AAB247006493B2 /* ZRResponse.m in Sources */,
 				22282D9C20AAB280006493B2 /* ZRDownloadRequest.m in Sources */,
+				2203C6C020BBD0DB0084810F /* ZRLoginVC.m in Sources */,
 				22282D9620AAB22B006493B2 /* ZRRequest.m in Sources */,
 				22A658FD20A41D3C00D47BC5 /* UIColor+TabBar.m in Sources */,
 				22282DA520AAB384006493B2 /* ZRNetworkStatus.m in Sources */,
@@ -555,11 +725,13 @@
 				2270DA6820A96EDB00DB3B6C /* ZRNetworkCache.m in Sources */,
 				224E412120AD45B600F7B54D /* UIScrollView+Refresh.m in Sources */,
 				22A658E420A3E92A00D47BC5 /* ZRBadgeValue.m in Sources */,
+				2203C6BA20BBAFF10084810F /* ZRConfigConst.m in Sources */,
 				224E412D20AD775F00F7B54D /* UIScrollView+EmptyDataSet.m in Sources */,
 				22282DA220AAB336006493B2 /* ZRNetworkConfig.m in Sources */,
 				22282D8920AA6D10006493B2 /* ZRHTTPRequest.m in Sources */,
 				224E412720AD6CBD00F7B54D /* ZREmptyDataVC.m in Sources */,
 				2273483520AC1EA30026F466 /* NSHTTPURLResponse+Network.m in Sources */,
+				2203C6B720BBAC830084810F /* ZRViewController.m in Sources */,
 				22282DAE20AAB4A9006493B2 /* ZRNetworkSerializer.m in Sources */,
 				22A658FA20A41D2800D47BC5 /* CAAnimation+TabBar.m in Sources */,
 				2273483820AC1ED30026F466 /* NSMutableURLRequest+Network.m in Sources */,

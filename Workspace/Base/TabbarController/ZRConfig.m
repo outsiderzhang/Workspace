@@ -37,7 +37,7 @@ static ZRConfig *_instance = nil;
 
 - (void)configNormal {
     _norTitleColor = [UIColor colorWithHexString:@"#808080"];
-    _selTitleColor = [UIColor colorWithHexString:@"#d81e06"];
+    _selTitleColor = kThemeColor;
     _isClearTabBarTopLine = YES;
     _tabBarTopLineColor = [UIColor lightGrayColor];
     _tabBarBackground = [UIColor whiteColor];

@@ -48,11 +48,10 @@
 #define     ZRLOCSTR(str)               NSLocalizedString(str, nil)
 
 /** 颜色 */
-#define     ZRRGB(r, g, b)              [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0]
-
+#define     ZRRGB(r, g, b)              ZRRGBA(r, g, b, 1.0)
 #define     ZRRGBA(r, g, b, a)          [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:a]
-#define     ZRHex(color)                [UIColor colorWithRed:((float)((color & 0xFF0000) >> 16))/255.0 green:((float)((color & 0xFF00) >> 8))/255.0 blue:((float)(color & 0xFF))/255.0 alpha:1.0]
 
+#define     ZRHex(color)                ZRHexA(color, 1.0)
 #define     ZRHexA(color, a)            [UIColor colorWithRed:((float)((color & 0xFF0000) >> 16))/255.0 green:((float)((color & 0xFF00) >> 8))/255.0 blue:((float)(color & 0xFF))/255.0 alpha:a]
 
 
