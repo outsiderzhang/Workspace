@@ -30,4 +30,9 @@
  @param window 主界面
  */
 - (void)initWithWindow:(UIWindow *)window;
+
+/**
+ 登录
+ */
+- (void)login;
 @end

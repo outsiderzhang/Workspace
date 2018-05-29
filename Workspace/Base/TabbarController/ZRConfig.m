@@ -9,8 +9,6 @@
 #import "ZRConfig.h"
 #import "ZRTabBarButton.h"
 #import "ZRTabBarController.h"
-#import "UIView+TabBar.h"
-#import "UIColor+TabBar.h"
 static ZRConfig *_instance = nil;
 @implementation ZRConfig
 
@@ -36,15 +34,15 @@ static ZRConfig *_instance = nil;
 }
 
 - (void)configNormal {
-    _norTitleColor = [UIColor colorWithHexString:@"#808080"];
+    _norTitleColor = ZRHex(0x808080);
     _selTitleColor = kThemeColor;
     _isClearTabBarTopLine = YES;
     _tabBarTopLineColor = [UIColor lightGrayColor];
     _tabBarBackground = [UIColor whiteColor];
     _layoutType = ZRConfigLayoutNormal;
     _imageSize = CGSizeMake(28, 28);
-    _badgeTextColor = [UIColor colorWithHexString:@"#FFFFFF"];
-    _badgeBackgroundColor = [UIColor colorWithHexString:@"#FF4040"];
+    _badgeTextColor = ZRHex(0xFFFFFF);
+    _badgeBackgroundColor = ZRHex(0xFF4040);
     _titleFont = 12.f;
     _titleOffset = 2.f;
     _imageOffset = 2.f;

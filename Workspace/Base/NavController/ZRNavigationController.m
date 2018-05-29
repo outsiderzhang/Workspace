@@ -23,6 +23,8 @@
     [navBar setBarTintColor:kThemeColor];
     [navBar setTintColor:kTintColor];
     [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName:kTintColor, NSFontAttributeName:[UIFont systemFontOfSize:18]}];
+    [navBar setBackgroundImage:[UIImage imageWithColor:kThemeColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault]; //此处使底部线条颜色为红色
+    [navBar setShadowImage:[UIImage imageWithColor:kThemeColor]];
     
     //导航栏左右文字主题
     UIBarButtonItem *barButtonItem = [UIBarButtonItem appearance];

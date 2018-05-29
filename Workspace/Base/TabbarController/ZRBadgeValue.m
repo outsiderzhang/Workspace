@@ -7,8 +7,6 @@
 //
 
 #import "ZRBadgeValue.h"
-#import "UIColor+TabBar.h"
-#import "UIView+TabBar.h"
 #import "CAAnimation+TabBar.h"
 #import "ZRConfig.h"
 @implementation ZRBadgeValue

@@ -106,8 +106,8 @@
 
 /** 屏幕 */
 #define     UI_SCREEN_SIZE          [UIScreen mainScreen].bounds.size//屏幕大小
-#define     UI_SCREEN_WIDTH         SCREEN_SIZE.width//屏幕宽
-#define     UI_SCREEN_HEIGTH        SCREEN_SIZE.height//屏幕高
+#define     UI_SCREEN_WIDTH         UI_SCREEN_SIZE.width//屏幕宽
+#define     UI_SCREEN_HEIGTH        UI_SCREEN_SIZE.height//屏幕高
 
 //判断设备型号
 #define     UI_IS_LANDSCAPE         ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)

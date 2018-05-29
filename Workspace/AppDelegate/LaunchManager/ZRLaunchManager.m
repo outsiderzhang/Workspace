@@ -26,10 +26,9 @@
 
 @synthesize tabBarController = _tabBarController;
 
-//初始化窗口
-- (void)initWithWindow:(UIWindow *)window
+//登录
+- (void)login
 {
-    self.window = window;
     if (!self.isLogin) {
         ZRRegisterVC *loginVC = [[ZRRegisterVC alloc] init];
         ZRNavigationController *nav = [[ZRNavigationController alloc] initWithRootViewController:loginVC];
@@ -37,6 +36,13 @@
     }else{
         [self setRootViewController:self.tabBarController];
     }
+}
+
+//初始化窗口
+- (void)initWithWindow:(UIWindow *)window
+{
+    self.window = window;
+    [self login];
 }
 
 - (void)setRootViewController:(__kindof UIViewController *)rootViewController

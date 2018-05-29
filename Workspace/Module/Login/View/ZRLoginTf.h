@@ -20,6 +20,14 @@ typedef NS_ENUM(NSUInteger, ZRLoginTfType) {
     ZRLoginCodeTf,
     ZRLoginClubTf,
 };
+
 @interface ZRLoginTf : UIView
 
+/**
+ 根据类型初始化输入框
+
+ @param type 输入框类型
+ @return 输入框
+ */
+- (instancetype)initWithType:(ZRLoginTfType)type;
 @end

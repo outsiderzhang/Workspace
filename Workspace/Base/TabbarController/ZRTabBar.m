@@ -8,7 +8,6 @@
 
 #import "ZRTabBar.h"
 #import "ZRTabBarButton.h"
-#import "UIView+TabBar.h"
 #import "CAAnimation+TabBar.h"
 @interface ZRTabBar ()
 /** 存放ZRTabBarButton数组 */

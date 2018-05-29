@@ -7,7 +7,6 @@
 //
 
 #import "ZRTabBarButton.h"
-#import "UIView+TabBar.h"
 @implementation ZRTabBarButton
 
 - (instancetype)initWithFrame:(CGRect)frame {

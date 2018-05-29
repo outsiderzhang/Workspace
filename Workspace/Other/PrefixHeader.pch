@@ -13,9 +13,14 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import <Masonry/Masonry.h>
 
+//cocoapods headerprefix
+#import "IQKeyboardManager.h"//键盘处理
+
 //工具宏
 #import "ZRToolMacro.h"
 //配置信息
 #import "ZRAppMacro.h"
+//分类
+#import "ZRCategory.h"
 
 #endif /* PrefixHeader_pch */
