@@ -42,7 +42,8 @@
             self.selImageArr = [NSMutableArray arrayWithArray:selImages];
             
         }
-        
+        //[self setTranslucent:YES];
+        self.alpha = 0.98;
         //背景颜色处理
         self.backgroundColor = [[ZRConfig config] tabBarBackground];
         

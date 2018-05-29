@@ -7,9 +7,9 @@
 //
 
 #import "ZRNearlyVC.h"
-
-@interface ZRNearlyVC ()
-
+#import "ZRLoginVC.h"
+@interface ZRNearlyVC ()<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation ZRNearlyVC
@@ -17,8 +17,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"附近俱乐部";
+    
+    [self.view addSubview:self.tableView];
 }
 
+- (void)push
+{
+    [self.navigationController pushViewController:[ZRLoginVC new] animated:YES];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 50;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.textLabel.text = @"今天天气不错";
+    cell.textLabel.textColor = [UIColor redColor];
+    return cell;
+}
+
+#pragma mark -- lazy load
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.estimatedRowHeight = 44;
+        _tableView.estimatedSectionFooterHeight = 0;
+        _tableView.estimatedSectionHeaderHeight = 0;
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    }
+    return _tableView;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

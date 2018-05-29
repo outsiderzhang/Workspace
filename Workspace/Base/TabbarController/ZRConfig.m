@@ -36,8 +36,8 @@ static ZRConfig *_instance = nil;
 - (void)configNormal {
     _norTitleColor = ZRHex(0x808080);
     _selTitleColor = kThemeColor;
-    _isClearTabBarTopLine = YES;
-    _tabBarTopLineColor = [UIColor lightGrayColor];
+    _isClearTabBarTopLine = NO;
+    _tabBarTopLineColor = kBgColor;
     _tabBarBackground = [UIColor whiteColor];
     _layoutType = ZRConfigLayoutNormal;
     _imageSize = CGSizeMake(28, 28);

@@ -19,9 +19,9 @@
 {
     //导航栏主题 title文字属性
     UINavigationBar *navBar = [UINavigationBar appearance];
-    [navBar setTranslucent:NO];
+    [navBar setTranslucent:YES];
     [navBar setBarTintColor:kThemeColor];
-    [navBar setTintColor:kTintColor];
+    //[navBar setTintColor:kWhiteColor];
     [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName:kTintColor, NSFontAttributeName:[UIFont systemFontOfSize:18]}];
     [navBar setBackgroundImage:[UIImage imageWithColor:kThemeColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault]; //此处使底部线条颜色为红色
     [navBar setShadowImage:[UIImage imageWithColor:kThemeColor]];
@@ -29,6 +29,11 @@
     //导航栏左右文字主题
     UIBarButtonItem *barButtonItem = [UIBarButtonItem appearance];
     [barButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName:kWhiteColor, NSFontAttributeName: [UIFont systemFontOfSize:16]} forState:UIControlStateNormal];
+    [barButtonItem setTintColor:kWhiteColor];
+    
+    
+    UITabBar *tabBar = [UITabBar appearance];
+    [tabBar setTranslucent:YES];
     
 }
 
