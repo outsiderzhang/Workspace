@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = kBgColor;
+    self.view.backgroundColor = [UIColor greenColor];
+    //不扩展
+    self.edgesForExtendedLayout = UIRectEdgeAll;
 }
 
 - (void)didReceiveMemoryWarning {

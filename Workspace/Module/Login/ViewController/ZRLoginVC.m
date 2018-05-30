@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"登录";
+    
+    UIButton *button = [[UIButton alloc] init];
+    button.frame = CGRectMake(0, 0, UI_SCREEN_WIDTH, 70);
+    [self.view addSubview:button];
+    
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:self action:@selector(clickMethod) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)clickMethod
+{
+    [self.navigationController pushViewController:[ZRLoginVC new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

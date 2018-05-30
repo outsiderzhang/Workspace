@@ -19,22 +19,23 @@
 {
     //导航栏主题 title文字属性
     UINavigationBar *navBar = [UINavigationBar appearance];
-    [navBar setTranslucent:YES];
-    [navBar setBarTintColor:kThemeColor];
-    //[navBar setTintColor:kWhiteColor];
+    [navBar setTranslucent:NO];
+    [navBar setBarTintColor:kWhiteColor];
     [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName:kTintColor, NSFontAttributeName:[UIFont systemFontOfSize:18]}];
-    [navBar setBackgroundImage:[UIImage imageWithColor:kThemeColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault]; //此处使底部线条颜色为红色
-    [navBar setShadowImage:[UIImage imageWithColor:kThemeColor]];
+    [navBar setBackgroundImage:[UIImage imageWithColor:kWhiteColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault]; //此处使底部线条颜色为红色
+    [navBar setShadowImage:[UIImage imageWithColor:kWhiteColor]];
     
     //导航栏左右文字主题
     UIBarButtonItem *barButtonItem = [UIBarButtonItem appearance];
-    [barButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName:kWhiteColor, NSFontAttributeName: [UIFont systemFontOfSize:16]} forState:UIControlStateNormal];
-    [barButtonItem setTintColor:kWhiteColor];
+    [barButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName:kTintColor, NSFontAttributeName: [UIFont systemFontOfSize:16]} forState:UIControlStateNormal];
+    [barButtonItem setTintColor:kTintColor];
     
-    
+    //tabbar
     UITabBar *tabBar = [UITabBar appearance];
     [tabBar setTranslucent:YES];
-    
+    [tabBar setBarTintColor:kWhiteColor];
+    [tabBar setBackgroundImage:[UIImage imageWithColor:kWhiteColor]];
+    [tabBar setShadowImage:[UIImage imageWithColor:kBgColor]];
 }
 
 - (void)viewDidLoad {

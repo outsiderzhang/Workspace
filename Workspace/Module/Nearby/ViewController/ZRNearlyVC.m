@@ -8,6 +8,7 @@
 
 #import "ZRNearlyVC.h"
 #import "ZRLoginVC.h"
+#import "UIScrollView+Refresh.h"
 @interface ZRNearlyVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @end
@@ -21,6 +22,35 @@
     self.navigationItem.title = @"附近俱乐部";
     
     [self.view addSubview:self.tableView];
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+//        self.edgesForExtendedLayout
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
+    @weakify(self);
+    [self.tableView setRefreshWithHeaderBlock:^{
+        NSLog(@"header 刷新");
+        [weak_self requestNewData];
+    } footerBlock:^{
+        NSLog(@"footer 刷新");
+        [weak_self requestMoreData];
+    }];
+}
+
+
+- (void)requestNewData
+{
+    sleep(2);
+    [self.tableView endRefresh];
+}
+
+- (void)requestMoreData
+{
+    sleep(2);
+    [self.tableView footerNomoreData];
+    [self.tableView endRefresh];
 }
 
 - (void)push
@@ -38,7 +68,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.text = @"今天天气不错";
     cell.textLabel.textColor = [UIColor redColor];
+    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.navigationController pushViewController:[ZRLoginVC new] animated:YES];
 }
 
 #pragma mark -- lazy load

@@ -22,7 +22,7 @@
     self.ZR_TabBar.tabBarDelegate = self;
     
     config.tabBarController = self;
-    
+
     [self setValue:self.ZR_TabBar forKeyPath:@"tabBar"];
     [self addObserver:self forKeyPath:@"selectedIndex" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
     
